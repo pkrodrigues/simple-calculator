@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Digital7;
+    src: url(../fonts/Digital7Mono-B1g5.ttf);
+}
+@font-face {
+    font-family: Digital7-n;
+    src: url(../fonts/info.txt);
+}
+
+:root{
+    --fundo-p: #151D3B;
+    --red: #D82148;
+    --gree-paste: #6ebf8b;
+    --paste: #c8c9b0;
+    --verde:rgb(51, 155, 51);
+    --verde-white:rgb(80, 213, 80);
+}
+body {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(125deg, var(--gree-paste) 50%, var(--red) 50%) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: var(--fundo-p);
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.container h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Digital7';
+    font-size: 2.3rem;
+}
+.visor{
+    height: 50px;
+    width: 400px;
+    background-color: var(--paste);
+    border: solid 2px white;
+    margin: 10px auto;
+    border-radius: 2px;
+    color: var(--verde)
+    
+}
+.visor p {
+    font-family: Digital7;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--fundo-p);
+    text-align: end;
+    margin: 10px 5px;
+}
+
+.teclado {
+    display: flex;
+    justify-content: center;
+}
+.teclado input, select{
+    margin: 2px auto;
+    outline-color: var(--verde);
+    background-color: var(--paste);
+    border: 1px solid white;
+
+
+}
+.teclado input {
+    height: 40px;
+    width: 130px;
+    border-radius: 2px;
+    color: var(--fundo-p);
+    text-align: center;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Digital7', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 2px;
+    line-height: 50px;
+}
+.teclado select {
+    color: var(--fundo-p);
+    border-radius: 2px;
+}
+.button{
+    display: block;
+    width: 400px;
+    height: 25px;
+    color:white;
+    font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button#calcular {
+    background-color: var(--verde-white);
+}
+.button#calcular:hover {
+    background-color: var(--gree-paste);
+}
+
+.button#limpar {
+    background-color: red;
+}
+.button#limpar:hover{
+    background-color: var(--red);
+}

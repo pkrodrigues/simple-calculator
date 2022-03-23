@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculater</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculadora simples</h2>
+        <div id="visor" class="visor">
+            <p id="result">00.00</p>
+        </div>
+        <div id="teclado" class="teclado">
+            <input type="number" name="entrada1" id="entrada1">
+            <select name="opr" id="opr">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <input type="number" name="entrada2" id="entrada2">
+        </div>
+        <span class="button" id="calcular" onclick="Calcular()" onkeypress="Calcular()" tabindex="0">Calcular</span>
+        <span class="button" id="limpar" onclick="Limpar()" onkeypress="Limpar()" tabindex="0">Limpar</span>
+        <!-- <button type="submit" class="calcular" onclick="Calcular()">Calcular</button> -->
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
